@@ -28,8 +28,8 @@ const Private=()=>{
         <div>
             <h1>Public posts</h1>
             
-             {posts.map(post=>(
-                <div>
+             {posts.map((post,index)=>(
+                <div key={"prv${index}"}>
                 <h2>{post.title}</h2>
                 <div>{post.content}</div>
                 </div>
