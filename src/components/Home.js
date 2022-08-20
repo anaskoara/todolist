@@ -18,12 +18,12 @@ const Home=()=>{
         <div>
             <h1>Public posts</h1>
             
-             {posts.map(post=>{
+             {posts.map(post=>(
                 <div>
                 <h2>{post.title}</h2>
                 <div>{post.content}</div>
                 </div>
-             })}
+             ))}
         </div>
     );
 }

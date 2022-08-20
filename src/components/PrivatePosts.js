@@ -4,7 +4,7 @@ import authService from "../services/authservice";
 import postService from "../services/postservice";
 
 
-const Privat=()=>{
+const Private=()=>{
     const [posts,setPosts]=useState({});
     const navigate=useNavigate();
 
@@ -28,12 +28,12 @@ const Privat=()=>{
         <div>
             <h1>Public posts</h1>
             
-             {posts.map(post=>{
+             {posts.map(post=>(
                 <div>
                 <h2>{post.title}</h2>
                 <div>{post.content}</div>
                 </div>
-             })}
+             ))}
         </div>
     );
 }

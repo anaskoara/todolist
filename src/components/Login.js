@@ -13,7 +13,7 @@ const Login =()=>{
         e.preventDefault();
 
         try{
-            await authService.login(mail,password).then(()=>{
+            await authService.login(email,password).then(()=>{
                 navigate("/home");
                 window.location.reload();
             })
